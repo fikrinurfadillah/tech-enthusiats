@@ -22,12 +22,12 @@ body, html {
 }
 
 .hero-image {
-  top: 70px;
+
   background-image:  url('https://lelogama.go-jek.com/cache/af/8f/af8ffcfc509e2a757a874d734d670e32.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+
 }
 .container {
     width: 100%;

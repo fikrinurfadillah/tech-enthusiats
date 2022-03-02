@@ -1,7 +1,7 @@
 <template>
     <section>  
         <div class="faq">
-            <h1>How GoClub works</h1>
+            <h1>FAQ</h1>
             <div  @click="faq.open = !faq.open" class="row card align-items-center" :key="faq.id" v-for="faq in faqs">
                 <div  class="col-md-12">
                     <div  class="row">
@@ -20,11 +20,11 @@
                 </div>
             </div>
         </div>
-        <div class="row btn">
+        <!-- <div class="row btn">
             <div class="col-md-12">
                 <a href="#">Check your GoClub invitation now!</a>
             </div>
-        </div>
+        </div> -->
     </section>
 </template>
 

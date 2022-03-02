@@ -4,6 +4,7 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import imageColoum from './components/imageColoum.vue'
+import router from './router'
 
 
 Vue.use(BootstrapVue)
@@ -15,5 +16,6 @@ Vue.component('image-coloum', { imageColoum })
 
 
 new Vue({
-  render: h => h(App),
+  router,
+  render: h => h(App)
 }).$mount('#app')

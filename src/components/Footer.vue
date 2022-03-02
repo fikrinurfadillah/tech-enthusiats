@@ -2,37 +2,38 @@
     <div class="footer">
         <div class="row">
             <div class="col-12 d-flex align-content-between flex-wrap mb-4 mb-md-5 brand">
-                <img class="logo" src="https://d1j87w3j7cc3a6.cloudfront.net/media/gojek/media/images/gojek-white-text.svg">  
+                <!-- <img class="logo" src="https://d1j87w3j7cc3a6.cloudfront.net/media/gojek/media/images/gojek-white-text.svg">   -->
+                <h1 class="brand-name">AEJ</h1>
             </div>
-            <div class="col-6 col-md mt-4 mt-md-0">
+            <div class="col-2  mt-4 mt-md-0">
                 <p>Company</p>
                 <ul>
                     <li>About</li>
-                    <li>Products</li>
-                    <li>Blog</li>
+                    <!-- <li>Products</li>
+                    <li>Blog</li> -->
                 </ul>
             </div>
-             <div class="col-6 col-md mt-4 mt-md-0">
-                <p>Join with us</p>
+             <div class="col-2  mt-4 mt-md-0">
+                <p>Contact us</p>
                 <ul>
-                    <li>Driver Partners</li>
-                    <li>Merchant Partners</li>
+                    <li>WA</li>
+                    <li>Email</li>
                 </ul>
             </div>
-             <div class="col-6 col-md mt-4 mt-md-0">
-                <p>Careers</p>
+             <!-- <div class="col-6 col-md mt-4 mt-md-0">
+                <p>Connect with us</p>
                 <ul>
-                    <li>Student</li>
-                    <li>Professional</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
                 </ul>
-            </div>
-            <div class="col-6 col-md mt-4 mt-md-0">
+            </div> -->
+            <!-- <div class="col-6 col-md mt-4 mt-md-0">
                 <p>Get in touch</p>
                 <ul>
                     <li>Help Center</li>
                     <li>Contact us</li>
                 </ul>
-            </div>
+            </div> -->
             <div class="col-12 col-lg-4 d-flex mt-4 mt-lg-0">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-6 col-lg-12">
@@ -54,7 +55,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-12 mt-4 mt-md-0 mt-lg-5">
+                    <!-- <div class="col-12 col-md-6 col-lg-12 mt-4 mt-md-0 mt-lg-5">
                         <div class="row">
                             <p>Download the app</p>
                             <div class="col-12 download row align-items-center">
@@ -66,7 +67,7 @@
                                 </a>
                             </div>
                         </div>    
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -88,6 +89,13 @@ export default {
 </script>
 
 <style scoped>
+
+
+.brand-name {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+}
 
 
 ul {

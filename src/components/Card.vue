@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="header justify-content-center">
-            <h1>Why I should join GoClub?</h1>
+            <h1>{{title}}</h1>
         </div>
         <div class="row">
             <div :class="{JustifyContentEnd: content.id ==='special'}" class="col-md-6 mx-auto d-flex" :key="content.id" v-for="content in contents">
@@ -12,7 +12,7 @@
                     </div>
                     <div  :class="{cardBody1: content.id === 'special', cardBody2: content.id === 'flexibility'}" class="card-body">
                         <p class="card-text">{{content.body}}</p>
-                        <a href="#" class="btn btn-primary">Find out here!</a>
+                        <a href="#" class="btn btn-primary">{{textButton}}</a>
                     </div>
                 </div>
             </div>    
@@ -22,6 +22,7 @@
 
 <script>
 export default {
+    props: ['title', 'textButton'],
     data() {
         return {
             contents: [
@@ -67,7 +68,7 @@ export default {
     max-width: 400px;
     color: white;
     border-radius: 1rem;
-    min-width: 570px;
+    min-width: 470px;
 }
 
 .card h3 {

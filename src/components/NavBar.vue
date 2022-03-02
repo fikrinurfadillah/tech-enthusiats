@@ -1,22 +1,27 @@
 <template>
     <nav class="fixed">
         <!-- <label class="logo">DesignX</label> -->
-        <img class="logo" v-bind:src="logoLink">
+        <div class="brand">
+            <h1 class="brand__name">AEJ</h1>    
+         </div>
         <ul :class="navIsSelected ? 'show' : ''">
-            <li><a class="active" href="#">Home</a></li>    
+            <li><router-link to="/">Home</router-link></li>    
+            <li><router-link to="/event">Event</router-link></li>
+            <li><router-link to="/academy">Academy</router-link></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Career</a></li>
             <li @click="toggleDropdown1()">
-                <a href="#">Partner with us<i class="fas fa-angle-down"></i></a>
-                <ul v-if="dropdownIsSelected1" class="row dropdown">
+                <a href="#" role="button">Partner with us<i class="fas fa-angle-down"></i></a>
+                <ul v-if="dropdownIsSelected1" class="row dropdown text-center">
                     <li class="col-md-3">
-                        <a>Driver Partners</a>
+                        <a href="https://wa.me/6281298292323?text=I'm%20interested%20for%20partner%20with%20AEJ">Contact Us</a>
                     </li>
-                    <li class="col-md-3">
+                    <!-- <li class="col-md-3">
                         <a>Merchant Partners</a>
-                    </li>
+                    </li> -->
                 </ul>
             </li>
-            <li><a href="#">Career</a></li>
-            <li @click="toggleDropdown2()">
+            <!-- <li @click="toggleDropdown2()">
                 <a href="#">Company<i class="fas fa-angle-down"></i></a>
                 <ul v-if="dropdownIsSelected2" class="row dropdown">
                     <li class="col-md-3">About</li>
@@ -24,11 +29,9 @@
                     <li class="col-md-3">Sutainability</li>
                     <li class="col-md-3">Newsroom</li>
                 </ul>
-            </li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Help</a></li>
-            <li><i class="fas fa-language"></i><a href="#">EN</a></li>
+            </li> -->
+            <!-- <li><a href="#">Help</a></li> -->
+            <!-- <li><i class="fas fa-language"></i><a href="#">EN</a></li> -->
         </ul>
         <label id="icon" @click="navSelected">
             <i :class="navIsSelected ? 'fas fa-times' : 'fas fa-bars'"></i>
@@ -75,17 +78,31 @@ export default {
 }
 
 nav {
-    height: 70px;
-    width: 100%;
+    /* height: 70px; */
+    /* width: 100%; */
     background: white;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     box-shadow: 0 2px 6px 0 rgb(0 0 0 / 20%);
 }
 
+.brand {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+}
 
-.logo {   
-    padding: 25px 100px;
+
+.brand__name {   
+    /* float: left; */
+    /* margin-right: 220px; */
+    /* padding: 25px 0; */
+    text-align: left;
+    padding: 0 0 0 20%;
+    
     line-height: 80px;
+    font-weight: 700;
+    color: black;
+
 }
 
 .fixed {
@@ -94,13 +111,16 @@ nav {
   left:0;
   right:0;
   width:100%;
-  z-index:99;
+  z-index:20;
   background:white;
 }
 
 nav ul {
-    float: right;
-    margin-right: 20px;
+    display: inline-block;
+    /* margin-right: 20px; */
+    text-align: right;
+    width: 60%;
+    vertical-align: middle;
     align-content: space-between;
 }
 
@@ -109,6 +129,10 @@ nav li {
     margin: 0 25px;
     line-height: 80px;
    
+}
+
+nav li:last-of-type {
+    margin-right: 5px;
 }
 
 nav a {
@@ -141,6 +165,7 @@ nav #icon {
     /* opacity: 0; */
     background-color: #f7f7f7;
     top: 70px;
+    z-index: 200;
     left: 0;
     right: 0;
     list-style-type: none;
