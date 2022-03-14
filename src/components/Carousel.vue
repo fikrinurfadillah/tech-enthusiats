@@ -37,7 +37,7 @@
         <template #img>
           <img
             style="border-radius: 50px"
-            class="d-block img-fluid w-100"
+            class=" img-fluid"
             width="1024"
             height="480"
             src="https://lelogama.go-jek.com/cache/ee/44/ee44fc8c3376469a8726a629b19c3635.webp"
@@ -49,7 +49,7 @@
         <template #img>
           <img
             style="border-radius: 50px"
-            class="d-block img-fluid w-100"
+            class=" img-fluid"
             width="1024"
             height="480"
             src="https://lelogama.go-jek.com/cache/59/ca/59caf778bf28fcf60e6b89c4e1acee8a.webp"
@@ -61,7 +61,7 @@
         <template #img>
           <img
             style="border-radius: 50px"
-            class="d-block img-fluid w-100"
+            class=" img-fluid"
             width="1024"
             height="480"
             src="https://lelogama.go-jek.com/cache/97/0d/970d408f2503541f852a44815e10efa1.webp"
@@ -73,7 +73,7 @@
         <template #img>
           <img
             style="border-radius: 50px"
-            class="d-block img-fluid w-100"
+            class=" img-fluid"
             width="1024"
             height="480"
             src="https://lelogama.go-jek.com/cache/e9/58/e95808073cc5ce11d0ff045875d9bbea.webp"
@@ -85,7 +85,7 @@
         <template #img>
           <img
             style="border-radius: 50px"
-            class="d-block img-fluid w-100"
+            class=" img-fluid"
             width="1024"
             height="480"
             src="https://lelogama.go-jek.com/cache/53/71/537196ead90ee5ba3815eb455a287a70.webp"
@@ -97,7 +97,7 @@
         <template #img>
           <img
             style="border-radius: 50px"
-            class="d-block img-fluid w-100"
+            class=" img-fluid"
             width="1024"
             height="480"
             src="https://lelogama.go-jek.com/cache/3a/79/3a79ba0f22d49ccaf2cc822a003d7db0.webp"
@@ -141,8 +141,8 @@
 
 <style  scoped>
 .carousel {
-    padding: 50px;
-    /* margin-top: 100px; */
+    padding: 0 16px ;
+    margin: 50px 0;
 }
 
 .carousel-item {
@@ -151,7 +151,8 @@
 }
 
 b-carousel-slide img {
-    border-radius: 50px;
+    /* border-radius: 50px; */
+    
 }
 
 </style>

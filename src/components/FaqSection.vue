@@ -167,4 +167,13 @@ a {
     padding: 12px 15px;
     min-height: 48px;
 }
+
+@media (max-width: 720px) {
+    .faq {
+        padding: 0;
+        width: 85%;
+        margin: auto;
+    }
+}
+
 </style>
