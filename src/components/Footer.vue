@@ -1,11 +1,11 @@
 <template>
     <div class="footer">
         <div class="row">
-            <div class="col-12 d-flex align-content-between flex-wrap mb-4 mb-md-5 brand">
+            <div class="col-lg-12 col-md-12 col-sm-12  align-content-between flex-wrap mb-4 mb-md-5 brand">
                 <!-- <img class="logo" src="https://d1j87w3j7cc3a6.cloudfront.net/media/gojek/media/images/gojek-white-text.svg">   -->
                 <h1 class="brand-name">AEJ</h1>
             </div>
-            <div class="col-2  mt-4 mt-md-0">
+            <div class="col-lg-2 col-md-2 col-sm-2  mt-4 mt-md-0">
                 <p>Company</p>
                 <ul>
                     <li>About</li>
@@ -13,7 +13,7 @@
                     <li>Blog</li> -->
                 </ul>
             </div>
-             <div class="col-2  mt-4 mt-md-0">
+             <div class="col-lg-2 col-md-2 col-sm-2  mt-4 mt-md-0">
                 <p>Contact us</p>
                 <ul>
                     <li>WA</li>
@@ -34,7 +34,7 @@
                     <li>Contact us</li>
                 </ul>
             </div> -->
-            <div class="col-12 col-lg-4 d-flex mt-4 mt-lg-0">
+            <div class="col-12 col-lg-4  mt-4 mt-lg-0">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-6 col-lg-12">
                         <p>Connect with us</p>
@@ -111,7 +111,7 @@ ul i {
 .footer {
     margin-top: 100px;
     background-color: #101820;
-    padding: 80px;
+    padding: 4rem;
     color: white;
     text-align: left;
 }

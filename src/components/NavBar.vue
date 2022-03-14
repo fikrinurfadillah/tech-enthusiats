@@ -98,7 +98,7 @@ nav {
     /* float: left; */
     /* margin-right: 220px; */
     /* padding: 25px 0; */
-    text-align: left;
+    /* text-align: left; */
     padding: 0 0 0 20%;
     
     line-height: 80px;
@@ -212,11 +212,12 @@ nav #icon {
         line-height: 30px;
     }
     nav a {
+        color: white;
         font-size: 20px;
     }
     a.active, a:hover {
         border: none;
-        color: #3498db;
+        color: green;
     }
     nav ul.show{
         left: 0;
