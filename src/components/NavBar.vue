@@ -80,15 +80,17 @@ export default {
 nav {
     /* height: 70px; */
     /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
     background: white;
     /* justify-content: space-between; */
     box-shadow: 0 2px 6px 0 rgb(0 0 0 / 20%);
 }
 
 .brand {
-    display: inline-block;
-    vertical-align: middle;
-    width: 30%;
+    /* display: inline-block;
+    vertical-align: middle; */
+    width: 10%;
 }
 
 
@@ -116,17 +118,17 @@ nav {
 }
 
 nav ul {
-    display: inline-block;
+    /* display: inline-block; */
     /* margin-right: 20px; */
     text-align: right;
-    width: 60%;
-    vertical-align: middle;
-    align-content: space-between;
+    /* width: calc(100% - 72px); */
+    width: 90%;
+    /* vertical-align: middle; */
 }
 
 nav li {
     display: inline-block;
-    margin: 0 25px;
+    margin-left: 2rem;
     line-height: 80px;
    
 }
@@ -175,16 +177,22 @@ nav #icon {
     .logo{
         padding-left: 60px;
     }
-    nav ul {
+    /* nav ul {
         margin-right: 20px;
-    }
+    } */
     nav a {
         font-size: 17px;
     }
 }
 
 
-@media (max-width: 909px) {
+@media (max-width: 720px) {
+    nav {
+        text-align: left;
+    }
+
+
+    
     nav #icon {
         display: block;
     }
