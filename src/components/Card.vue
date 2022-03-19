@@ -178,6 +178,19 @@ export default {
   /* .card {
     justify-content: center !important;
   } */
+  .row {
+    margin: auto;
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+  }
+
+  .card {
+    width: 80%;
+    margin: auto;
+  }
 
   .card-header h3 {
       font-size: 1.3rem;

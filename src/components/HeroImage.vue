@@ -1,8 +1,6 @@
 <template>
     <div class="hero-image">
-        <div class="container">
-           
-        </div>
+        <img src="https://lelogama.go-jek.com/cache/af/8f/af8ffcfc509e2a757a874d734d670e32.webp" alt="">
        
       
     </div>
@@ -23,16 +21,20 @@ body, html {
 
 .hero-image {
 
-  background-image:  url('https://lelogama.go-jek.com/cache/af/8f/af8ffcfc509e2a757a874d734d670e32.webp');
+  /* background-image:  url('https://lelogama.go-jek.com/cache/af/8f/af8ffcfc509e2a757a874d734d670e32.webp');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 
 }
 .container {
     width: 100%;
     padding: auto;
     height: 500px;
+}
+
+.hero-image img {
+  width: 100%;
 }
 .hero-text {
   text-align: center;

@@ -73,6 +73,7 @@ export default {
 
 .academy-tab__links {
   width: 80%;
+  display: flex;
   margin: auto;
 }
 
@@ -103,5 +104,19 @@ export default {
 .academy-content {
   position: relative;
   top: 51px;
+}
+
+@media (max-width: 720px) {
+  .academy-tab {
+    overflow-x: hidden;
+  }
+  .academy-tab__links {
+    width: 100%;
+
+  }
+
+  .academy-tab__link {
+    font-size: .7rem;
+  }
 }
 </style>

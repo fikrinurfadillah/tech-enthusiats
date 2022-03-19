@@ -211,4 +211,19 @@ export default {
     max-width: 864px;
   }
 }
+
+@media (max-width: 720px) {
+
+  .event-header {
+    margin: 0;
+    padding: 1rem;
+  }
+  .event-header__title {
+    font-size: 2rem;
+  }
+
+  .event-header__forms {
+    width: 100%;
+  }
+}
 </style>

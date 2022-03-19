@@ -90,7 +90,7 @@ nav {
 .brand {
     /* display: inline-block;
     vertical-align: middle; */
-    width: 10%;
+    /* width: 10%; */
 }
 
 
@@ -99,8 +99,7 @@ nav {
     /* margin-right: 220px; */
     /* padding: 25px 0; */
     /* text-align: left; */
-    padding: 0 0 0 20%;
-    
+    padding: 0 0 0 50%;
     line-height: 80px;
     font-weight: 700;
     color: black;

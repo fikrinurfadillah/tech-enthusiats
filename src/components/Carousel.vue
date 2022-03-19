@@ -141,13 +141,13 @@
 
 <style  scoped>
 .carousel {
-    padding: 0 16px ;
+    padding: 0 .5rem ;
     margin: 50px 0;
 }
 
 .carousel-item {
     max-height: 800px;
-    border-radius: 50px;
+    border-radius: 25px;
 }
 
 b-carousel-slide img {

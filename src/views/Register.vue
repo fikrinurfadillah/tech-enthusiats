@@ -599,4 +599,10 @@ export default {
 .invalid label {
   color: red;
 }
+
+@media (max-width: 720px) {
+  .card {
+    width: 80%;
+  }
+}
 </style>
