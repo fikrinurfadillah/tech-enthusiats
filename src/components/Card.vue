@@ -3,7 +3,7 @@
     <div class="card-header">
       <slot name="header"></slot>
     </div>
-    <div class="card-body md:p-10 p-3">
+    <div class="card-body ">
       <slot></slot>
     </div>
   </div>
@@ -28,13 +28,11 @@ export default {
 }
 
 .card-body {
-  /* padding: 20px; */
+  padding: 40px;
   text-align: center;
-  
   background: #fdfbfb;
   color: black;
   border-radius: 0 0 1rem 1rem;
-  /* color: black; */
 }
 
 
@@ -50,6 +48,9 @@ export default {
 
 @media (max-width: 720px) {
   
+  .card-body {
+    padding: 10px;
+  }
   /* .row {
     margin: auto;
   } */
