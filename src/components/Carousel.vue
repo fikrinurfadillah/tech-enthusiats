@@ -48,7 +48,7 @@
 
 @media screen and (min-width: 769px) {
   img {
-    height: 500px;
+    height: 490px;
     width: 100%;
     border-radius: 32px;
   }
