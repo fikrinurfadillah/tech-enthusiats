@@ -1,6 +1,6 @@
 <template>
   <div class="hero-image">
-    <h1 class="text-5xl">Welcome to Tech Enthusiast</h1>
+    <h1 class="text-2xl md:text-3xl lg:text-5xl">Welcome to Tech Enthusiast</h1>
   </div>
 </template>
 
@@ -22,7 +22,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 50vh;
 }
 
 h1 {
@@ -32,5 +32,11 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+@media screen and (min-width: 769px) {
+  .hero-image {
+    height: 80vh;
+  }
 }
 </style>>

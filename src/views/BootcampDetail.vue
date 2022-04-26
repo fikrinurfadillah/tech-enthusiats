@@ -4,9 +4,9 @@
     <div class="bootcamp-detail">
       <HeroImage />
       <section>
-        <h1 class="text-4xl my-5 font-bold">Why Bootcamp at AEJ</h1>
+        <h1 class="text-3xl md:text-4xl my-5 font-bold">Why Bootcamp at AEJ</h1>
 
-        <div class="grid grid-cols-2 gap-4 w-5/6 m-auto">
+        <div class="grid grid-cols-2 gap-2 w-5/6  m-auto">
           <card>
             <template v-slot:header>
               <h2 class="text-2xl">Some Text</h2>
@@ -33,8 +33,8 @@
         </div>
       </section>
       <section>
-        <h1 class="text-4xl my-5 font-bold">Highlights kurikulum</h1>
-        <div class="grid grid-cols-2 gap-4 w-5/6 m-auto">
+        <h1 class="text-3xl md:text-4xl my-5 font-bold">Highlights kurikulum</h1>
+        <div class="grid grid-cols-2 gap-2 w-5/6  m-auto">
           <card>
             <template v-slot:header>
               <h2 class="text-2xl">Some Text</h2>
@@ -61,9 +61,9 @@
         </div>
       </section>
       <section>
-        <h1 class="text-4xl my-5 font-bold">Career Support</h1>
+        <h1 class="text-3xl md:text-4xl my-5 font-bold">Career Support</h1>
 
-        <div class="grid grid-cols-2 gap-4 w-5/6 m-auto">
+        <div class="grid grid-cols-2 gap-2 w-5/6  m-auto">
           <card>
             <template v-slot:header>
               <h2 class="text-2xl">Some Text</h2>

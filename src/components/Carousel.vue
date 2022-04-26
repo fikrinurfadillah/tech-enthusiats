@@ -45,12 +45,14 @@
 </script>
 
 <style  scoped>
+img {
+    border-radius: 32px;
+}
 
 @media screen and (min-width: 769px) {
   img {
     height: 490px;
     width: 100%;
-    border-radius: 32px;
   }
 }
 

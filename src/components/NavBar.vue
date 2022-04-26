@@ -1,8 +1,10 @@
 <template>
-  <div class=" m-auto fixed z-20 top-0 left-0 right-0 shadow-sm">
-    <nav class=" flex  items-center  justify-between lg:justify-evenly">
-      <div class="brand mr-4 ">
-        <h1 class="brand__name text-3xl">AEJ</h1>
+  <div class="m-auto fixed z-20 top-0 left-0 right-0 shadow-sm">
+    <nav class="flex items-center justify-between lg:justify-evenly">
+      <div class="brand mr-4 ml-4">
+        <router-link to="/">
+          <h1 class="brand__name text-3xl">AEJ</h1>
+        </router-link>
       </div>
       <ul :class="navIsSelected ? 'show' : ''" class="">
         <li class="mr-10"><router-link to="/">Home</router-link></li>

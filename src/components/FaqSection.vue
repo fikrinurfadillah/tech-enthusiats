@@ -1,7 +1,7 @@
 <template>
     <section>  
         <div class="faq">
-            <h1 class="text-5xl">FAQ</h1>
+            <h1 class="text-3xl md:text-5xl">FAQ</h1>
             <div  @click="faq.open = !faq.open" class="row card align-items-center" :key="faq.id" v-for="faq in faqs">
                 <div  class="col-md-12">
                     <div  class="row">

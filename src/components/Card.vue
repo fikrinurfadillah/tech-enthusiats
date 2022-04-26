@@ -3,7 +3,7 @@
     <div class="card-header">
       <slot name="header"></slot>
     </div>
-    <div class="card-body">
+    <div class="card-body md:p-10 p-3">
       <slot></slot>
     </div>
   </div>
@@ -16,43 +16,27 @@ export default {
 </script>
 
 <style scoped>
-.header h1 {
+/* .header h1 {
   font-size: 37px;
   color: black;
   font-weight: 700;
-}
+} */
 .card {
   color: white;
   border-radius: 1rem;
   border: none;
 }
 
-.card h3 {
-  font-weight: 700;
-  font-size: 29px;
-}
-
-.card p {
-  /* font-weight: 0; */
-  font-size: 21px;
-  line-height: 28px;
-  min-height: 250px;
-}
-
 .card-body {
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
+  
+  background: #fdfbfb;
+  color: black;
   border-radius: 0 0 1rem 1rem;
   /* color: black; */
 }
 
-.card a {
-  width: 100%;
-  padding: 10px;
-  border-radius: 20px;
-  background-color: #00880d;
-  color: white;
-}
 
 .card-header {
   padding: 20px;
@@ -63,33 +47,29 @@ export default {
   background: #33cc33;
 }
 
-.card-body {
-  background: #fdfbfb;
-  color: black;
-}
 
 @media (max-width: 720px) {
   
-  .row {
+  /* .row {
     margin: auto;
-  }
+  } */
 
-  .header h1 {
+  /* .header h1 {
     font-size: 1.6rem;
     margin: 2rem 0;
-  }
-
+  } */
+/* 
   .card {
     width: 80%;
     margin: auto;
-  }
-
+  } */
+/* 
   .card-header h3 {
     font-size: 1.3rem;
   }
 
   .card-body p {
     font-size: 1rem;
-  }
+  } */
 }
 </style>
