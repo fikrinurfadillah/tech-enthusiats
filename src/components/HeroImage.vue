@@ -1,6 +1,6 @@
 <template>
   <div class="hero-image">
-    <h1 class="text-5xl">Welcome to AEj</h1>
+    <h1 class="text-5xl">Welcome to Tech Enthusiast</h1>
   </div>
 </template>
 
