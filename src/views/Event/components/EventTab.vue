@@ -36,7 +36,8 @@
     <div class="event-content">
       <EventAndroid v-if="selectedTab === 'Android'"></EventAndroid>
       <EventKotlin v-if="selectedTab === 'Kotlin'"></EventKotlin>
-      <!-- <Flutter v-if="selectedTab === 'Flutter'"></Flutter> -->
+      <EventFlutter v-if="selectedTab === 'Flutter'"></EventFlutter>
+      <EventIos v-if="selectedTab === 'IOS'"></EventIos>
     </div>
   </div>
 </template>
@@ -44,11 +45,15 @@
 <script>
 import EventAndroid from "@/views/Event/components/EventAndroid.vue";
 import EventKotlin from "@/views/Event/components/EventKotlin.vue";
+import EventFlutter from "@/views/Event/components/EventFlutter.vue";
+import EventIos from "@/views/Event/components/EventIos.vue";
 
 export default {
   components: {
     EventAndroid,
     EventKotlin,
+    EventFlutter,
+    EventIos
   },
   data() {
     return {

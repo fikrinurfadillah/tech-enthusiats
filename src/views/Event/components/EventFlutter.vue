@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="event-header">
-      <h1 class="event-header__title">Whats on Kotlin</h1>
+      <h1 class="event-header__title">Whats on Flutter</h1>
       <h2 class="event-header__subtitle">
         Cerita mitra, berita seru, dan promo terbaru. Baca semua artikel soal
         AEJ di sini.

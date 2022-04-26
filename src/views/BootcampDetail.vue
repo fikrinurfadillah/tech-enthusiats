@@ -3,13 +3,93 @@
     <NavBar />
     <div class="bootcamp-detail">
       <HeroImage />
-      <Card
-        title="Why Bootcamp at AEJ"
-        style="margin-top: 60px"
-        textButton="Find Out Here"
-      />
-      <Card title="Highlights kurikulum" textButton="Download Silabus" />
-      <Card title="Career Support" textButton="Find Out Here" />
+      <section>
+        <h1 class="text-4xl my-5 font-bold">Why Bootcamp at AEJ</h1>
+
+        <div class="grid grid-cols-2 gap-4 w-5/6 m-auto">
+          <card>
+            <template v-slot:header>
+              <h2 class="text-2xl">Some Text</h2>
+            </template>
+            <template v-slot:default>
+              <p>
+                We are one of the biggest Tech Community in Indonesia. We help
+                connecting tech enthusiast to meet others, Grow, Learn, Share
+                and make a good relation among us.
+              </p>
+            </template>
+          </card>
+          <card>
+            <template v-slot:header>
+              <h2 class="text-2xl">Some Text</h2>
+            </template>
+            <template v-slot:default>
+              <p>
+                We have several communities like Android Enthusiast Jakarta, IOS
+                Enthusiast Jakarta, Flutter Enthusiast Jakarta and General
+              </p>
+            </template>
+          </card>
+        </div>
+      </section>
+      <section>
+        <h1 class="text-4xl my-5 font-bold">Highlights kurikulum</h1>
+        <div class="grid grid-cols-2 gap-4 w-5/6 m-auto">
+          <card>
+            <template v-slot:header>
+              <h2 class="text-2xl">Some Text</h2>
+            </template>
+            <template v-slot:default>
+              <p>
+                We are one of the biggest Tech Community in Indonesia. We help
+                connecting tech enthusiast to meet others, Grow, Learn, Share
+                and make a good relation among us.
+              </p>
+            </template>
+          </card>
+          <card>
+            <template v-slot:header>
+              <h2 class="text-2xl">Some Text</h2>
+            </template>
+            <template v-slot:default>
+              <p>
+                We have several communities like Android Enthusiast Jakarta, IOS
+                Enthusiast Jakarta, Flutter Enthusiast Jakarta and General
+              </p>
+            </template>
+          </card>
+        </div>
+      </section>
+      <section>
+        <h1 class="text-4xl my-5 font-bold">Career Support</h1>
+
+        <div class="grid grid-cols-2 gap-4 w-5/6 m-auto">
+          <card>
+            <template v-slot:header>
+              <h2 class="text-2xl">Some Text</h2>
+            </template>
+            <template v-slot:default>
+              <p>
+                We are one of the biggest Tech Community in Indonesia. We help
+                connecting tech enthusiast to meet others, Grow, Learn, Share
+                and make a good relation among us.
+              </p>
+            </template>
+          </card>
+          <card>
+            <template v-slot:header>
+              <h2 class="text-2xl">Some Text</h2>
+            </template>
+            <template v-slot:default>
+              <p>
+                We have several communities like Android Enthusiast Jakarta, IOS
+                Enthusiast Jakarta, Flutter Enthusiast Jakarta and General
+              </p>
+            </template>
+          </card>
+        </div>
+      </section>
+
       <div class="portfolio-alumni">
         <h1>Portfolio Alumni</h1>
         <div class="row">
@@ -63,16 +143,15 @@
         </div>
       </div>
 
-      <FaqSection class="mb-5"/>
+      <FaqSection class="mb-5" />
 
       <div>
-         <router-link class="bootcamp-detail__cta" to="/register"> Daftar Sekarang </router-link>
-        
+        <router-link class="bootcamp-detail__cta" to="/register">
+          Daftar Sekarang
+        </router-link>
       </div>
-
-      
     </div>
-    <Footer class="footer-bootcamp"/>
+    <Footer class="footer-bootcamp" />
   </div>
 </template>
 
@@ -91,7 +170,7 @@ export default {
     Card,
     FaqSection,
   },
-  props: ['bootcamps'],
+  props: ["bootcamps"],
 
   data() {
     return {
@@ -214,8 +293,6 @@ export default {
   padding: 16px 8px;
 }
 
-
-
 .bootcamp-detail__cta {
   display: block;
   width: 40%;
@@ -228,6 +305,4 @@ export default {
   color: white;
   border-radius: 25px;
 }
-
-
 </style>
