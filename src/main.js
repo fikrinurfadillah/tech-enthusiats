@@ -6,15 +6,20 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import imageColoum from './components/imageColoum.vue'
 import router from './router'
 import VueToast from 'vue-toast-notification';
+import './assets/css/tailwind.css'
+// import VueTailwind from 'vue-tailwind';
 // Import one of the available themes
 //import 'vue-toast-notification/dist/theme-default.css';
 import 'vue-toast-notification/dist/theme-sugar.css';
+
+
 
 
 Vue.use(VueToast)
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
+// Vue.use(VueTailwind)
 Vue.config.productionTip = false
 Vue.component('image-coloum', { imageColoum })
 

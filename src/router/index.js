@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Event from '../views/Event.vue'
+import Event from '../views/Event/Event.vue'
 import EventDetail from '../views/EventDetail.vue'
-import Academy from '../views/Academy.vue'
+import Academy from '../views/Academy/Academy.vue'
 import BootcampDetail from '../views/BootcampDetail.vue'
 import Register from '../views/Register.vue'
 import CorporateDetail from '../views/CorporateDetail.vue'
@@ -16,7 +16,20 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: 'Tech Entusiast',
+      metaTags: [
+        {
+          name: 'description',
+          content: 'The home page of our example app.'
+        },
+        {
+          property: 'og:description',
+          content: 'The home page of our example app.'
+        }
+      ]
+    }
   },
   {
     path: '/event',

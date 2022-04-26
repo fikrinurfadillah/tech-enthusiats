@@ -1,63 +1,36 @@
 <template>
-    <div class="hero-image">
-        <img src="https://lelogama.go-jek.com/cache/af/8f/af8ffcfc509e2a757a874d734d670e32.webp" alt="">
-       
-      
-    </div>
-
+  <div class="hero-image">
+    <h1 class="text-5xl">Welcome to AEj</h1>
+  </div>
 </template>
 
 <script>
-export default {
-  
-}
+export default {};
 </script>
 
 <style scoped>
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
 }
 
 .hero-image {
-
-  /* background-image:  url('https://lelogama.go-jek.com/cache/af/8f/af8ffcfc509e2a757a874d734d670e32.webp');
+  position: relative;
+  background: linear-gradient(to left, #000442 2%, rgba(255, 0, 0, 0.5)),
+    url("../assets/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
-
-}
-.container {
-    width: 100%;
-    padding: auto;
-    height: 500px;
+  background-size: cover;
+  height: 80vh;
 }
 
-.hero-image img {
-  width: 100%;
-}
-.hero-text {
-  text-align: center;
+h1 {
   position: absolute;
-  top: 50%;
+  bottom: 50%;
+  text-align: center;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-}
-
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-text button:hover {
-  background-color: #555;
   color: white;
 }
 </style>>
