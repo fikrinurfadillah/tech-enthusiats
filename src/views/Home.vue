@@ -9,7 +9,7 @@
     </section>
     <section>
       <h1 class="text-3xl md:text-4xl my-5 font-bold">Benefit Join with Aej</h1>
-      <div class="grid grid-cols-2 gap-2 w-5/6  m-auto">
+      <div class="grid grid-cols-2 gap-2 md:w-5/6  m-auto card-container">
         <card>
           <template v-slot:header>
             <h2 class="md:text-2xl">Some Text</h2>
@@ -68,3 +68,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.card-container {
+  width: 90%;
+}
+</style>
