@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar />
+    <!-- <NavBar /> -->
     <h1 class="mt-5 mb-3 title">Register</h1>
     <base-dialog v-if="inputIsValid" title="Konfirmasi Pendaftaran">
       <template #default>
@@ -293,20 +293,20 @@
         </div>
       </form>
     </div>
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
-import Footer from "@/components/Footer.vue";
+// import NavBar from "@/components/NavBar.vue";
+// import Footer from "@/components/Footer.vue";
 import BaseDialog from "@/components/BaseDialog.vue";
 
 import axios from "axios";
 export default {
   components: {
-    NavBar,
-    Footer,
+    // NavBar,
+    // Footer,
     BaseDialog,
   },
   data() {

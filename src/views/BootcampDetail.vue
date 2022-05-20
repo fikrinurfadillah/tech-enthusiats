@@ -1,22 +1,21 @@
 <template>
   <div>
-    <NavBar />
+    <!-- <NavBar /> -->
     <div class="bootcamp-detail">
       <HeroImage />
       <section>
         <h1 class="text-3xl md:text-4xl my-5 font-bold">Why Bootcamp at AEJ</h1>
 
-        <div class="grid grid-cols-2 gap-2 w-5/6  m-auto">
+        <div class="grid grid-cols-2 gap-2 w-5/6 m-auto">
           <card>
             <template v-slot:header>
               <h2 class="text-2xl">Some Text</h2>
             </template>
             <template v-slot:default>
-              <p>
-                We are one of the biggest Tech Community in Indonesia. We help
-                connecting tech enthusiast to meet others, Grow, Learn, Share
-                and make a good relation among us.
-              </p>
+              <ul>
+                <li>Materi Terupdate</li>
+                <li>1-On-1 Mentoring</li>
+              </ul>
             </template>
           </card>
           <card>
@@ -24,17 +23,20 @@
               <h2 class="text-2xl">Some Text</h2>
             </template>
             <template v-slot:default>
-              <p>
-                We have several communities like Android Enthusiast Jakarta, IOS
-                Enthusiast Jakarta, Flutter Enthusiast Jakarta and General
-              </p>
+              <ul>
+                <li>Di Luar Jam Kerja</li>
+                <li> Invite to private Discord</li>
+                <li>Sertifikat</li>
+              </ul>
             </template>
           </card>
         </div>
       </section>
       <section>
-        <h1 class="text-3xl md:text-4xl my-5 font-bold">Highlights kurikulum</h1>
-        <div class="grid grid-cols-2 gap-2 w-5/6  m-auto">
+        <h1 class="text-3xl md:text-4xl my-5 font-bold">
+          Highlights kurikulum
+        </h1>
+        <div class="grid grid-cols-2 gap-2 w-5/6 m-auto">
           <card>
             <template v-slot:header>
               <h2 class="text-2xl">Some Text</h2>
@@ -63,16 +65,15 @@
       <section>
         <h1 class="text-3xl md:text-4xl my-5 font-bold">Career Support</h1>
 
-        <div class="grid grid-cols-2 gap-2 w-5/6  m-auto">
+        <div class="grid grid-cols-2 gap-2 w-5/6 m-auto">
           <card>
             <template v-slot:header>
               <h2 class="text-2xl">Some Text</h2>
             </template>
             <template v-slot:default>
               <p>
-                We are one of the biggest Tech Community in Indonesia. We help
-                connecting tech enthusiast to meet others, Grow, Learn, Share
-                and make a good relation among us.
+                Team kami akan mengajarkan anda cara membuat CV dan Portofolio
+                yang professional dan relevan
               </p>
             </template>
           </card>
@@ -82,16 +83,16 @@
             </template>
             <template v-slot:default>
               <p>
-                We have several communities like Android Enthusiast Jakarta, IOS
-                Enthusiast Jakarta, Flutter Enthusiast Jakarta and General
+                Team kami akan mengajarkan anda cara melakukan proses interview
+                dan kepercayaan diri
               </p>
             </template>
           </card>
         </div>
       </section>
 
-      <div class="portfolio-alumni">
-        <h1>Portfolio Alumni</h1>
+      <div class="portfolio-alumni mt-5">
+        <h1 class="text-3xl">Portfolio Alumni</h1>
         <div class="row">
           <div
             class="col-lg-4 col-md-4 col-sm-4"
@@ -122,7 +123,7 @@
         </div>
       </div>
       <div class="review-graduates">
-        <h1>Review Graduates</h1>
+        <h1 class="text-3xl">Review Graduates</h1>
         <div class="row">
           <div
             class="col-lg-4 col-md-4 col-sm-4"
@@ -142,8 +143,18 @@
           </div>
         </div>
       </div>
-
-      <FaqSection class="mb-5" />
+      <section class="mb-5">
+        <h1 class="text-3xl md:text-5xl mt-5 font-bold">FAQ</h1>
+        <FaqSection
+         
+          v-for="(faq, i) in faqs"
+          :key="i"
+          :title="faq.header"
+          :faq="faq"
+          :index="i"
+          :open="faq.open"
+        />
+      </section>
 
       <div>
         <router-link class="bootcamp-detail__cta" to="/register">
@@ -151,22 +162,19 @@
         </router-link>
       </div>
     </div>
-    <Footer class="footer-bootcamp" />
+    <!-- <Footer class="footer-bootcamp" /> -->
   </div>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
 import HeroImage from "@/components/HeroImage.vue";
 import Card from "@/components/Card.vue";
 import FaqSection from "@/components/FaqSection.vue";
-
-import Footer from "@/components/Footer.vue";
 export default {
   components: {
-    NavBar,
+    // NavBar,
     HeroImage,
-    Footer,
+    // Footer,
     Card,
     FaqSection,
   },
@@ -214,6 +222,56 @@ export default {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore recusandae ducimus possimus quo commodi. Similique pariatur a, earum necessitatibus aperiam dolore, voluptates ipsam voluptas adipisci reiciendis repudiandae facere quae.",
         },
       ],
+      faqs: [
+        {
+          id: "1",
+          header: " Apa syarat mengikuti bootcamp ini?",
+          body: "https://linktr.ee/aejkt",
+          open: false,
+        },
+        {
+          id: "2",
+          header: "Apa yang akan saya dapatkan setelah mengikut botcamp ini?",
+          body: "https://linktr.ee/aejkt",
+          open: false,
+        },
+        {
+          id: "3",
+          header: "Berapa lama bootcamp berlangsung?",
+          body: "https://linktr.ee/aejkt",
+          open: false,
+        },
+        {
+          id: "4",
+          header: "Berapa murid per kelasnya?",
+          body: "https://linktr.ee/aejkt",
+          open: false,
+        },
+        {
+          id: "5",
+          header: "Bagaimana mengamankan slot untuk mengikuti bootcamp ini?",
+          body: "https://linktr.ee/aejkt",
+          open: false,
+        },
+        {
+          id: "6",
+          header: "Apakah ada program cicilan untuk bootcamp ini?",
+          body: "https://linktr.ee/aejkt",
+          open: false,
+        },
+        {
+          id: "7",
+          header:
+            "Apakah saya mendapatkan sertifikat setelah lulus bootcamp ini?",
+          body: "https://linktr.ee/aejkt",
+          open: false,
+        },
+      ],
+    };
+  },
+  provide() {
+    return {
+      faqs: this.faqs,
     };
   },
 };

@@ -1,20 +1,13 @@
 <template>
   <div>
-    <NavBar class="no-shadow"/>
     <academy-tab-nav></academy-tab-nav>
-    <!-- <HeroImage /> -->
   </div>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
-import AcademyTabNav from "@/views/Academy/components/AcademyTabNav.vue";
-
 export default {
   components: {
-    NavBar,
-    // HeroImage,
-    AcademyTabNav,
+    'academy-tab-nav': () => import ('@/views/Academy/components/AcademyTabNav.vue')
   },
 };
 </script>

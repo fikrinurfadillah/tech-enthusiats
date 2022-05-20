@@ -1,22 +1,22 @@
 <template>
   <div class="event">
-    <NavBar  class="no-shadow"/>
+    <!-- <NavBar  class="no-shadow"/> -->
     <event-tab></event-tab>
 
     
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
-import Footer from "@/components/Footer.vue";
+// import NavBar from "@/components/NavBar.vue";
+// import Footer from "@/components/Footer.vue";
 import EventTab from "@/views/Event/components/EventTab.vue"
 
 export default {
   components: {
-    NavBar,
-    Footer,
+    // NavBar,
+    // Footer,
     EventTab
   },
   // inject: ['events'],

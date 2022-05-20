@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar />
+    <!-- <NavBar /> -->
     <div class="event-detail">
       <div class="event-detail__overview">
         <h1>{{ event.title }}</h1>
@@ -84,17 +84,17 @@
       </div>
     </div>
 
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
-import Footer from "@/components/Footer.vue";
+// import NavBar from "@/components/NavBar.vue";
+// import Footer from "@/components/Footer.vue";
 export default {
   components: {
-    NavBar,
-    Footer,
+    // NavBar,
+    // Footer,
   },
   inject: ['events'],
   data() {

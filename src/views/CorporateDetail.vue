@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar />
+    <!-- <NavBar /> -->
     <div class="corporate-detail">
       <HeroImage />
       <Card
@@ -77,22 +77,22 @@
         </div>
       </div>
     </div>
-    <Footer class="footer-corporate"/>
+    <!-- <Footer class="footer-corporate"/> -->
   </div>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
+// import NavBar from "@/components/NavBar.vue";
 import HeroImage from "@/components/HeroImage.vue";
 import Card from "@/components/Card.vue";
 import FaqSection from "@/components/FaqSection.vue";
 
-import Footer from "@/components/Footer.vue";
+// import Footer from "@/components/Footer.vue";
 export default {
   components: {
-    NavBar,
+    // NavBar,
     HeroImage,
-    Footer,
+    // Footer,
     Card,
     FaqSection,
   },

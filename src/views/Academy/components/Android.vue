@@ -32,7 +32,7 @@
       <Card title="Highlights Kurikulum"/>
       <Card title="Career Support"/> -->
     <faq-section></faq-section>
-    <Footer />
+    <!-- <Footer /> -->
     <!-- <h1>Bootcamp</h1> -->
   </div>
 </template>
@@ -41,14 +41,14 @@
 // import HeroImage from "@/components/HeroImage.vue";
 // import Card from '@/components/Card.vue'
 import FaqSection from "@/components/FaqSection.vue";
-import Footer from "@/components/Footer.vue";
+// import Footer from "@/components/Footer.vue";
 
 export default {
   components: {
     // HeroImage,
     // Card,
     FaqSection,
-    Footer,
+    // Footer,
   },
   data() {
     return {

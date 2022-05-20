@@ -1,20 +1,18 @@
 <template>
   <div class="home">
-    <NavBar />
     <section>
-      <HeroImage />
+      <hero-image></hero-image>
     </section>
     <section>
-      <Carousel />
+      <carousel></carousel>
     </section>
     <section>
-      <h1 class="text-3xl md:text-4xl my-5 font-bold">Benefit Join with Aej</h1>
-      <div class="grid grid-cols-2 gap-2 md:w-5/6  m-auto card-container">
+      <h1 class="text-3xl md:text-4xl my-5 font-bold">
+        Benefit Join with Tech Enthusiast
+      </h1>
+      <div class="grid grid-cols-2 gap-2 w-5/6 md:w-3/4 m-auto card-container">
         <card>
-          <template v-slot:header>
-            <h2 class="md:text-2xl">Some Text</h2>
-          </template>
-          <template v-slot:default>
+          <template>
             <p class="text-sm md:text-lg">
               We are one of the biggest Tech Community in Indonesia. We help
               connecting tech enthusiast to meet others, Grow, Learn, Share and
@@ -23,10 +21,7 @@
           </template>
         </card>
         <card>
-          <template v-slot:header>
-            <h2 class="md:text-2xl">Some Text</h2>
-          </template>
-          <template v-slot:default>
+          <template>
             <p class="text-sm md:text-lg">
               We have several communities like Android Enthusiast Jakarta, IOS
               Enthusiast Jakarta, Flutter Enthusiast Jakarta and General
@@ -36,41 +31,47 @@
       </div>
     </section>
     <section>
-      <faq-section></faq-section>
+      <h1 class="text-3xl md:text-5xl mt-5 font-bold">FAQ</h1>
+      <faq-section
+        v-for="(faq, i) in faqs"
+        :key="i"
+        :title="faq.header"
+        :faq="faq"
+        :index="i"
+        :open="faq.open"
+      ></faq-section>
     </section>
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import NavBar from "@/components/NavBar.vue";
-import HeroImage from "@/components/HeroImage.vue";
-import Carousel from "@/components/Carousel.vue";
-import Card from "@/components/Card.vue";
-// import Coloum1 from '@/components/Coloum1.vue'
-// import Coloum2 from '@/components/Coloum2.vue'
-import FaqSection from "@/components/FaqSection.vue";
-import Footer from "@/components/Footer.vue";
-
 export default {
   name: "Home",
   components: {
-    // HelloWorld
-    NavBar,
-    HeroImage,
-    Carousel,
-    Card,
-    // Coloum1,
-    // Coloum2,
-    FaqSection,
-    Footer,
+    "hero-image": () => import("@/components/HeroImage.vue"),
+    carousel: () => import("@/components/Carousel.vue"),
+    card: () => import("@/components/Card.vue"),
+    "faq-section": () => import("@/components/FaqSection.vue"),
+  },
+  data() {
+    return {
+      faqs: [
+        {
+          id: "1",
+          header: "Bagaimana cara untuk gabung di komunitas",
+          body: "https://linktr.ee/aejkt",
+          open: false,
+        },
+        
+      ],
+    };
+  },
+  provide() {
+    return {
+      faqs: this.faqs,
+    };
   },
 };
 </script>
-
-<style scoped>
-.card-container {
-  width: 90%;
-}
-</style>
