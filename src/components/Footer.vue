@@ -47,7 +47,7 @@
                                     <a href="#"><i class="fab fa-twitter"></i></a>
                                 </li>
                                 <li class="col-auto pr-3">
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/aej.id/" target="blank"><i class="fab fa-instagram"></i></a>
                                 </li>
                                 <li class="col-auto pr-3">
                                     <a href="#"><i class="fab fa-youtube"></i></a>    
