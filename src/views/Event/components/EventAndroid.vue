@@ -24,7 +24,7 @@
     </div>
 
     <div class="event-body">
-      <div class="row">
+      <div class="row" v-if="events">
         <div
           class="col-lg-4 col-md-4 col-sm-4"
           v-for="event in events"
@@ -38,6 +38,9 @@
 
           <p>{{ event.date }}</p>
         </div>
+      </div>
+      <div >
+        <h1 class="text-4xl font-bold">Coming Soon....</h1>
       </div>
     </div>
   </div>
@@ -92,6 +95,7 @@ export default {
   /* padding: 60px; */
   /* text-align: left; */
   width: 85%;
+  min-height: 300px;
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;

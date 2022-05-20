@@ -39,6 +39,9 @@
           <p>{{ event.date }}</p>
         </div>
       </div>
+      <div >
+        <h1 class="text-4xl font-bold">Coming Soon....</h1>
+      </div>
     </div>
   </div>
 </template>
@@ -91,6 +94,7 @@ export default {
 .event-body {
   /* padding: 60px; */
   /* text-align: left; */
+  min-height: 300px;
   width: 85%;
   margin-top: 60px;
   margin-left: auto;
