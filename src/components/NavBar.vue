@@ -10,8 +10,8 @@
         <li class="mr-10"><router-link to="/">Home</router-link></li>
         <li class="mr-10"><router-link to="/event">Event</router-link></li>
         <li class="mr-10"><router-link to="/academy">Academy</router-link></li>
-        <li class="mr-10"><a href="#">Blog</a></li>
-        <li class="mr-10"><a href="#">Career</a></li>
+        <li class="mr-10"><router-link to="/blog">Blog</router-link></li>
+        <li class="mr-10"><router-link to="/career">Career</router-link></li>
         <li @click="toggleDropdown1()">
           <a href="#" role="button"
             >Partner with us<i class="fas fa-angle-down"></i
@@ -61,6 +61,11 @@ export default {
       this.dropdownIsSelected2 = !this.dropdownIsSelected2;
     },
   },
+  watch: {
+    $route () {
+      this.navIsSelected = false
+    }
+  }
 };
 </script>
 <style scoped>
