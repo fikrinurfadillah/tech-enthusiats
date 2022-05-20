@@ -1,13 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Event from '../views/Event/Event.vue'
-import EventDetail from '../views/EventDetail.vue'
-import Academy from '../views/Academy/Academy.vue'
-import BootcampDetail from '../views/BootcampDetail.vue'
-import Register from '../views/Register.vue'
-import CorporateDetail from '../views/CorporateDetail.vue'
-import CorporateRegister from '../views/CorporateRegister.vue'
 
 
 Vue.use(VueRouter)
@@ -16,7 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: () => import('../views/Home.vue'),
     meta: {
       title: 'Tech Entusiast',
       metaTags: [
@@ -34,37 +26,48 @@ const routes = [
   {
     path: '/event',
     name: 'Event',
-    component: Event
+    component: () => import('../views/Event/Event.vue')
   },
   {
     path: '/academy',
     name: 'Academy',
-    component: Academy
+    component: () => import('../views/Academy/Academy.vue')  
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    component: () => import('../views/Blog/Blog.vue')
+  },
+  {
+    path: '/career',
+    name: 'Career',
+    component: () => import('../views/Career/Career.vue')
   },
   {
     path: '/event/:eventId',
     name: 'EventDetail',
-    component: EventDetail
+    component: () => import('../views/EventDetail.vue')
   },
   {
     path: '/academy/bootcamp/:id',
     name: 'BootcampDetail',
-    component: BootcampDetail
+    component: () => import('../views/BootcampDetail.vue')
   },
   {
     path: '/academy/corporate/:id',
     name: 'CorporateDetail',
-    component: CorporateDetail
+    component: () => import('../views/CorporateDetail.vue')
+
   },
   {
     path: '/register',
     name: 'Register',
-    component: Register
+    component: () => import('../views/Register.vue')
   },
   {
     path: '/corporateRegister',
     name: 'CorporateRegister',
-    component: CorporateRegister
+    component: () => import('../views/CorporateRegister.vue')
   },
   {
     path: '/about',
