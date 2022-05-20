@@ -1,8 +1,5 @@
 <template>
   <div class="card shadow-lg">
-    <div class="card-header">
-      <slot name="header"></slot>
-    </div>
     <div class="card-body ">
       <slot></slot>
     </div>
@@ -11,7 +8,7 @@
 
 <script>
 export default {
-  props: ["title", "header", "body"],
+  // props: ["title", "header", "body"],
 };
 </script>
 
@@ -32,7 +29,7 @@ export default {
   text-align: center;
   background: #fdfbfb;
   color: black;
-  border-radius: 0 0 1rem 1rem;
+  border-radius:1rem;
 }
 
 
@@ -42,7 +39,7 @@ export default {
 }
 
 .card-header {
-  background: #33cc33;
+  background: #00B050;
 }
 
 
@@ -51,26 +48,5 @@ export default {
   .card-body {
     padding: 10px;
   }
-  /* .row {
-    margin: auto;
-  } */
-
-  /* .header h1 {
-    font-size: 1.6rem;
-    margin: 2rem 0;
-  } */
-/* 
-  .card {
-    width: 80%;
-    margin: auto;
-  } */
-/* 
-  .card-header h3 {
-    font-size: 1.3rem;
-  }
-
-  .card-body p {
-    font-size: 1rem;
-  } */
 }
 </style>
